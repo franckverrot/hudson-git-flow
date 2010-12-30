@@ -1,0 +1,17 @@
+server: https://your-server.com
+password: 'password for auth basic'
+user: 'username for auth basic'
+log: '/path/to/logfile'
+json_api_url: '/api/json'
+build_delay: '0'
+sanitize: "-"
+filter: 'feature'
+
+github: 
+ user: 'github username'
+ token: 'github token'
+ branches: 'example: http://github.com/api/v2/json/repos/show/github_username/repo/branches'
+ development: 'example: git@github.com:github_username/repo.git'
+
+ 
+  
