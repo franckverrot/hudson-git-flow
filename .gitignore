@@ -1,0 +1,11 @@
+*~
+.DS_Store
+.swp
+.*.swp
+.*.swo
+.bundle/
+.rvmrc
+Gemfile.lock
+Capfile
+lib/config/deploy.rb
+lib/config/config.yml
