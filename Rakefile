@@ -1,4 +1,5 @@
-%w( rubygems open-uri net/http net/https nokogiri logger yaml json git rest-client lib/api ).each do |lib| 
+$:<< '.'
+%w( rubygems open-uri net/http net/https nokogiri logger yaml json git rest-client lib/api).each do |lib| 
   require lib
 end 
 
