@@ -19,6 +19,7 @@ end
 
 task :default => 'api:jobs:add'
 
+Api.config = 'lib/config/config.example.yml'
 namespace :api do
   
   namespace :branches do

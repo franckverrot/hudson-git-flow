@@ -1,10 +1,16 @@
+$:<< '.'
 %w( xml_config commands ).each { |lib| require "lib/job/build/#{lib}" }
 
 module Api
   class <<self  
 
+    def config=(path)
+      #@config ||= YAML.load_file('lib/config/config.yml')
+      @config ||= YAML.load_file(path)
+    end
+    
     def config
-      @config ||= YAML.load_file('lib/config/config.yml')
+      @config || raise('You should first specify the configuratio file using Api.config = "path/to/conf/file"')
     end
     
     def logger
