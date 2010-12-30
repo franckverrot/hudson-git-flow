@@ -1,4 +1,4 @@
-server: https://your-server.com
+server: 'https://your-server.com'
 password: 'password for auth basic'
 user: 'username for auth basic'
 log: '/path/to/logfile'
